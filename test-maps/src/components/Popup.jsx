@@ -2,8 +2,11 @@ import { useEffect, useState } from "react";
 
 const Popup = ({ selectedWoj, closePopup }) => {
 
-  const API_URL = "mapa-polski-api-production-31fb.up.railway.app";
-  const ApiURL = `${API_URL}/api/terytws1.svc/PobierzListeMiejscowosciWGminie?province=${encodeURIComponent(selectedWoj)}`;
+  const API_URL = "https://mapa-polski-api-production-31fb.up.railway.app";
+
+  const cleanProvince = selectedWoj.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  const ApiURL = `${API_URL}/api/terytws1.svc/PobierzListeMiejscowosciWGminie?province=${encodeURIComponent(cleanProvince)}`;
+
 
 
 
