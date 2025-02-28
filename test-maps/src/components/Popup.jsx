@@ -4,8 +4,7 @@ const Popup = ({ selectedWoj, closePopup }) => {
 
   const API_URL = "https://mapa-polski-api-production-31fb.up.railway.app";
 
-  const ApiURL = `${API_URL}/api/terytws1.svc/PobierzListeMiejscowosciWGminie?province=${encodeURIComponent(cleanProvince)}`;
-
+  const ApiURL = `${API_URL}/api/terytws1.svc/PobierzListeMiejscowosciWGminie?province=${encodeURIComponent(selectedWoj)}`;
 
 
 
