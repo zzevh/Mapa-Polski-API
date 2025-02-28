@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 
 const Popup = ({ selectedWoj, closePopup }) => {
 
-  const ApiURL = `http://localhost:8000/api/terytws1.svc/PobierzListeMiejscowosciWGminie?province=${encodeURIComponent(selectedWoj)}`;
+  const API_URL = "mapa-polski-api-production-31fb.up.railway.app";
+  const ApiURL = `${API_URL}/api/terytws1.svc/PobierzListeMiejscowosciWGminie?province=${encodeURIComponent(selectedWoj)}`;
+
 
 
   const [isSearchWoj, setIsSearchWoj] = useState([])
