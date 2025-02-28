@@ -17,7 +17,7 @@ client = Client(wsdl='https://uslugaterytws1test.stat.gov.pl/wsdl/terytws1.wsdl'
 
 app = FastAPI()
 
-app.mount("/", StaticFiles(directory="test-map/dist", html=True), name="frontend")
+app.mount("/", StaticFiles(directory="test-maps/dist", html=True), name="frontend")
 
 # Dodaj middleware CORS
 app.add_middleware(
