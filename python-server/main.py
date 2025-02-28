@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from zeep import Client
 from zeep.wsse.username import UsernameToken
 
@@ -15,6 +16,8 @@ client = Client(wsdl='https://uslugaterytws1test.stat.gov.pl/wsdl/terytws1.wsdl'
 print(client.service.PobierzListeMiejscowosciWGminie('MAZOWIECKIE','','','2024-01-01'))
 
 app = FastAPI()
+
+app.mount("/", StaticFiles(directory="test-map/dist", html=True), name="frontend")
 
 # Dodaj middleware CORS
 app.add_middleware(
