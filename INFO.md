@@ -33,7 +33,7 @@ OGOLNE INFO:
   - do uruchomineia projektu react(/test-maps) standardowo `npm run dev`
   - do uruhcomeniaa projektu python(/python-server) komenda - `uvicorn main:app --reload`
   - zadanie jest do zobaczenia na strone - `https://zadanieutkmapa.bkrupka.com`
-  - jak i zadanie jest do zobaczenia na githubie - ``
+  - jak i zadanie jest do zobaczenia na githubie - `https://github.com/zzevh/Mapa-Polski-API`
 
 
    Probowalem zrobić to w pełni sam, ALE ze względu na złożoność API funkcyjnego (SOAP) i brak wcześniejszego doświadczenia, potrzebowałem pomocy..
