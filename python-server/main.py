@@ -13,7 +13,7 @@ client = Client(wsdl='https://uslugaterytws1test.stat.gov.pl/wsdl/terytws1.wsdl'
 
 # print(client.service.PobierzListeRegionow('2024-01-01'))
 # print(client.service.PobierzListeWojewodztw('2024-01-01'))
-print(client.service.PobierzListeMiejscowosciWGminie('MAZOWIECKIE','','','2024-01-01'))
+# print(client.service.PobierzListeMiejscowosciWGminie('MAZOWIECKIE','','','2024-01-01'))
 
 app = FastAPI()
 
